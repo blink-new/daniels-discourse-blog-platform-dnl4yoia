@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /about
+Allow: /contact
+Allow: /categories
+Allow: /privacy
+Allow: /terms
+
+# Block admin and sensitive routes
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Allow all public content
+Allow: /blog/*
+Allow: /images/
+Allow: /assets/
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://daniels-discourse-blog-platform-dnl4yoia.sites.blink.new/sitemap.xml
+
+# Google AdSense bot
+User-agent: Mediapartners-Google
+Allow: /
+
+# Google AdSense verification
+User-agent: AdsBot-Google
+Allow: /
